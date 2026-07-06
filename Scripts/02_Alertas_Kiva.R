@@ -375,9 +375,9 @@ alertas <- alertas %>%
 alertas <- alertas %>%
   mutate(total_encuestas = n(),
          Exitos = if_else(flag_duracion== 0 & flag_missing == 0 & flag_skips == 0 &  
-                            flag_extremes == 0 & part_valido == 1,1,0),
+                            flag_extremes == 0 & flag_case_id == 0 & part_valido == 1,1,0),
          Alertas = if_else(flag_duracion == 1 | flag_missing == 1 | flag_skips == 1 |   
-                             flag_extremes == 1,1,0),
+                             flag_extremes == 1 | flag_case_id == 1,1,0),
          Rechazo = if_else(f2_consent == 2 | f2_status_1 == 5,1,0,missing = NA),
          no_contesta = if_else(f2_status_1 == 1,1,0,missing = NA),
          num_equiv = if_else(f2_status_1 == 2,1,0,missing = NA),
