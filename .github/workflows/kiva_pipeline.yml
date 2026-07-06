@@ -6,14 +6,14 @@ on:
   #   - cron: "0 */2 * * *"  # cada 2 horas UTC
 
 concurrency:
-  group: mercy-alertas
+  group: kiva-alertas
   cancel-in-progress: true
 
 permissions:
   contents: read
 
 jobs:
-  run-mercy:
+  run-kiva:
     runs-on: ubuntu-latest
     timeout-minutes: 40
 
