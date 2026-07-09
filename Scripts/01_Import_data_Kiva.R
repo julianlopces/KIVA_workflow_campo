@@ -98,7 +98,8 @@ data <- data %>%
     "uuid:2a6531d9-894f-4d70-bfdb-bcceedd82522",
     "uuid:1d64a33d-9da7-43c8-91b4-f2e0622da29c",
     "uuid:a6aab690-2edc-4878-bd8a-d4f7729251c7",
-    "uuid:718e3b13-bdc2-472f-88be-2c6158baa417"
+    "uuid:718e3b13-bdc2-472f-88be-2c6158baa417",
+    "uuid:09a6ef89-6017-4585-93a5-113bbffb017c"
   ))
 
 data <- data %>%
